@@ -1,0 +1,6 @@
+{
+  "name": "shipfix-tracker",
+  "private": true,
+  "version": "1.0.0",
+  "packageManager": "pnpm@10.28.2"
+}

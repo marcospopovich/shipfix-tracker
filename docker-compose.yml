@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:16
+    container_name: shipfix_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: shipfix
+      POSTGRES_PASSWORD: shipfix123
+      POSTGRES_DB: shipfix
+    ports:
+      - "5432:5432"
+    volumes:
+      - shipfix_pgdata:/var/lib/postgresql/data
+
+volumes:
+  shipfix_pgdata:
